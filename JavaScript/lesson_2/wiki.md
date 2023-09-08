@@ -70,7 +70,10 @@ console.log("Hi Stranger");
 ```
 ---
 #### Keywords
- > determine how the declared variables behave in terms of scope and mutability, but they do not specify the data type of the variable.
+>determine how the declared variables behave in terms of scope and mutability, but they do not specify the data type of the variable.
+
+What is a variable?
+>is a named storage of data that can hold any data type without explecitely defining why type of data it will store.
 
 `var` : variables declared as `var` are function-scoped or globally scoped depending on where they are declared. They are subject to hoisting, meaning the declaration is moved to the top of the function or global scope during the compilation phase. They can be redeclared within the same scope without generating an error. And they can be updated and reassigned.
 ``` javascript
@@ -126,10 +129,10 @@ function example() {
 | Number    | 1,2,3,4,5...100, 1.23                                 |
 | String    | 'hello, world' , "kimpoy@ndmu.edu.ph"                 |
 | Boolean   | true, false                                           |
-| Row       | Explicitly set a variable with no value               |
+| Null      | Explicitly set a variable with no value               |
 | Undefined | For variables that have not yet been defined.         |
 | Object    | Complex data structures - Arrays, Dates, Literals etc |
-| Symbol    | Used with objects.                                    |
+| Symbol    | Used with objects                                     |
 ---
 
 #### String
