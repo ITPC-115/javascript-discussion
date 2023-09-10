@@ -172,7 +172,7 @@ let title = "Hamilton";
 console.log(title.toUpperCase);
 let result = title.toLowerCase
 console.log(result);
-console.log(title)
+console.log(title);
 ```
 
 Get the index number of a character in a string
@@ -256,7 +256,7 @@ Concatenation
 ``` js
 let views = 100;
 let result = 'The video has reached' + views + ' views';
-console.log.(result);
+console.log(result);
 ```
 
 Using Template String / Template literal
@@ -279,7 +279,7 @@ console.log(html);
 
 How to define an array?
 ``` javascript
-let name = ['Toto', 'Kim', 'John'];
+let names = ['Toto', 'Kim', 'John'];
 let age = [21,22,23];
 console.log(name);
 console.log(age);
@@ -287,41 +287,41 @@ console.log(age);
 
 How to override a value in the array?
 ``` javascript
-let ninjas = ['Toto', 'Kim', 'John'];
-ninjas[0]= 'Sir'
-console.log(ninjas);
-console.log(ninjas[0]);
+let names = ['Toto', 'Kim', 'John'];
+names[0]= 'Sir';
+console.log(names);
+console.log(names[0]);
 ```
 
 **Array Methods**
 
 ``` js
-let name = ['Toto', 'Kim', 'John'];
-let result = name.join(',');
+let names = ['Toto', 'Kim', 'John'];
+let result = names.join(',');
 console.log(result);
 ```
 > `.join()` - This method is used to combine all element within the array and seperate them with the defined _seperator_. The returned value of this method is a string.
 
 
 ``` js
-let name = ['Toto', 'Kim', 'John'];
-let result = name.indexOf('Kim');
+let names = ['Toto', 'Kim', 'John'];
+let result = names.indexOf('Kim');
 console.log(result);
 ```
 > `.indexOf()` - used to get the index of a specific element in array. The returned value is number.
 
 
 ``` js
-let name = ['Toto', 'Kim', 'John'];
-let result = name.concat(['Alvarez', 'Bautista']);
+let names = ['Toto', 'Kim', 'John'];
+let result = names.concat(['Alvarez', 'Bautista']);
 console.log(result);
 ```
 >`.concat()` - it takes an array and combine or join it with another array.
 
 
 ``` js
-let name = ['Toto', 'Kim', 'John'];
-let result = name.push('Bautista');
+let names = ['Toto', 'Kim', 'John'];
+let result = names.push('Bautista');
 console.log(name);
 console.log(result);
 ```
@@ -329,8 +329,74 @@ console.log(result);
 
 
 ``` js
-let name = ['Toto', 'Kim', 'John'];
-let result = name.push('Bautista');
+let names = ['Toto', 'Kim', 'John'];
+let result = names.push('Bautista');
 console.log(result);
 ```
 >`pop()` - it removes the element in the last index or the end value in an array. This method returns the value it poped off in an array.
+---
+
+#### Undefined
+Value is not explecitely or not intentionally set to undefined. Don't have any value or dataType unless you assigned one in the later part of your code.
+
+``` js
+let age;
+console.log(age, age + 1,`my age is ${age}`);
+```
+---
+#### Null
+Value is explecitely and intenionally defined as null or no value.
+ 
+``` js
+let age = null;
+console.log(age, age + 1,`my age is ${age}`);
+```
+---
+#### Booleans
+Booleans represent two special values in JavaScript which are `true` and `false`
+
+``` js
+console.log(true,false);
+console.log('true','false');
+```
+> Always remember that `true` and `false` which are boolean values are different to `"true"` and `"false"` which are string.
+
+``` js
+let email = 'kimjohn.bautista@ndmu.edu.ph';
+let booleanResult = email.includes('@');
+console.log(booleanResult);
+```
+> The example above shows that method can return boolean values.
+
+Comparison Operators
+``` js
+let age = 24;
+console.log(age == 24);
+console.log(age == 23);
+console.log(age != 23);
+console.log(age > 23);
+console.log(age < 23);
+console.log(age <= 24);
+console.log(age >= 24);
+```
+> What we used in the code snipper above is called abstract equality or loose equality. Which means that a values type is not considered when we perform a comparison.
+
+``` js
+let age = 24;
+console.log(age === 24);
+console.log(age !== 23);
+console.log(age === '24');
+console.log(age !== '23');
+```
+
+---
+#### Type Conversion
+``` js
+let score = '100';
+
+score = Number(score);
+let result = score +1;
+console.log(result);
+console.log(typeof score);
+```
+>The above example is just a basic example of converting a string into a number using the `Number()` method which takes the variable you want to convert as the argument. `typeof` was aslo used here to check the type/data type of a variable.
