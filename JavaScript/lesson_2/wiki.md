@@ -272,3 +272,65 @@ let views = 100;
 let html = `<p>The video has reached ${views} views</p> `;
 console.log(html);
 ```
+---
+
+#### Arrays
+>Array is also a data type but only on the example of our so called Object Data Type.
+
+How to define an array?
+``` javascript
+let name = ['Toto', 'Kim', 'John'];
+let age = [21,22,23];
+console.log(name);
+console.log(age);
+```
+
+How to override a value in the array?
+``` javascript
+let ninjas = ['Toto', 'Kim', 'John'];
+ninjas[0]= 'Sir'
+console.log(ninjas);
+console.log(ninjas[0]);
+```
+
+**Array Methods**
+
+``` js
+let name = ['Toto', 'Kim', 'John'];
+let result = name.join(',');
+console.log(result);
+```
+> `.join()` - This method is used to combine all element within the array and seperate them with the defined _seperator_. The returned value of this method is a string.
+
+
+``` js
+let name = ['Toto', 'Kim', 'John'];
+let result = name.indexOf('Kim');
+console.log(result);
+```
+> `.indexOf()` - used to get the index of a specific element in array. The returned value is number.
+
+
+``` js
+let name = ['Toto', 'Kim', 'John'];
+let result = name.concat(['Alvarez', 'Bautista']);
+console.log(result);
+```
+>`.concat()` - it takes an array and combine or join it with another array.
+
+
+``` js
+let name = ['Toto', 'Kim', 'John'];
+let result = name.push('Bautista');
+console.log(name);
+console.log(result);
+```
+>`.push()` - this a good example of a so called destructive method. It alters the original value inside the array. By using the `push()` method you're a pushing an element into an arrray. The returned value is a number which is the new length of the array.
+
+
+``` js
+let name = ['Toto', 'Kim', 'John'];
+let result = name.push('Bautista');
+console.log(result);
+```
+>`pop()` - it removes the element in the last index or the end value in an array. This method returns the value it poped off in an array.
