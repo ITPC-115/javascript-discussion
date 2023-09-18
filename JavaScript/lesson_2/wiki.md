@@ -400,3 +400,102 @@ console.log(result);
 console.log(typeof score);
 ```
 >The above example is just a basic example of converting a string into a number using the `Number()` method which takes the variable you want to convert as the argument. `typeof` was aslo used here to check the type/data type of a variable.
+
+---
+
+### Control Flow
+
+#### Loops
+
+for loop : 
+``` js
+for(let i = 0; i < 5 ; i++){
+    // let i = 0 -> initialization variable
+    // i<5 -> condition
+    // i++ -> final expression
+
+    console.log(i);
+}
+console.log('Done Looping')
+```
+``` js
+const colors = ['red','green','blue'];
+for(let i = 0 ; i< colors.length ; i++){
+    console.log('index number', i);
+    console.log(colors[i]);
+}
+```
+
+while loop:
+
+```js
+let i =0;
+while(i<5){
+    console.log(i);
+    i++;
+}
+```
+``` js
+const colors = ['red','green','blue'];
+let i = 0;
+while( i < colors.length){
+    console.log('index number', i);
+    console.log(colors[i]);
+    i++;
+}
+```
+
+do while:
+``` js
+let i =5;
+do{
+    console.log(i);
+    i++;
+}while(i<5)
+```
+---
+#### Conditional statements
+
+if statement :
+``` js
+const color = 'blue';
+const colors = ['green', 'orange','brown'];
+
+if(!colors.includes('blue')){
+    console.log(`${color} is not in the list`);
+}
+```
+
+else statement :
+``` js
+const color = 'blue';
+const colors = ['green', 'orange','brown'];
+
+if(!colors.includes(color)){
+    console.log(`${color} is not in the list`);
+} else {
+    console.log(`${color} is already in the list`);
+}
+
+```
+
+else if statement :
+``` js
+const color = 'blue';
+const colors = ['green', 'orange','brown'];
+
+if(colors.length > 0){
+    console.log(The list of colors is not empty)
+} else if(!colors.includes(color)){
+    console.log(`${color} is not in the list`);
+} else {
+    console.log(`${color} is already in the list`);
+}
+```
+
+logical operators:
+```
+|| -> logical OR; at least one condition is true
+&& -> logical AND; all condition should be true
+!  -> logical NOT; negates the boolean value
+```
