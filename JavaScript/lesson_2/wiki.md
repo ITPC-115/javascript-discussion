@@ -69,7 +69,7 @@ You can also try displaying a log on the console by adding this line of code in 
 console.log("Hi Stranger");
 ```
 ---
-#### Keywords
+#### Keywords : `var` , `let` , `const`
 >determine how the declared variables behave in terms of scope and mutability, but they do not specify the data type of the variable.
 
 What is a variable?
@@ -407,7 +407,7 @@ console.log(typeof score);
 
 #### Loops
 
-for loop : 
+**for loop** : 
 ``` js
 for(let i = 0; i < 5 ; i++){
     // let i = 0 -> initialization variable
@@ -426,7 +426,7 @@ for(let i = 0 ; i< colors.length ; i++){
 }
 ```
 
-while loop:
+**while loop**:
 
 ```js
 let i =0;
@@ -445,7 +445,7 @@ while( i < colors.length){
 }
 ```
 
-do while:
+**do while**:
 ``` js
 let i =5;
 do{
@@ -456,7 +456,7 @@ do{
 ---
 #### Conditional statements
 
-if statement :
+**if statement** :
 ``` js
 const color = 'blue';
 const colors = ['green', 'orange','brown'];
@@ -466,7 +466,7 @@ if(!colors.includes('blue')){
 }
 ```
 
-else statement :
+**else statement** :
 ``` js
 const color = 'blue';
 const colors = ['green', 'orange','brown'];
@@ -479,7 +479,7 @@ if(!colors.includes(color)){
 
 ```
 
-else if statement :
+**else if statement** :
 ``` js
 const color = 'blue';
 const colors = ['green', 'orange','brown'];
@@ -493,9 +493,61 @@ if(colors.length > 0){
 }
 ```
 
-logical operators:
+**logical operators**:
 ```
 || -> logical OR; at least one condition is true
 && -> logical AND; all condition should be true
 !  -> logical NOT; negates the boolean value
+```
+
+#### Keywords: `break` , `continue`
+> Used to control loop execution.
+
+`break;` : is used to completely terminate the loop's execution and will proceed with the first statement after the loop. It is also used in switch cases to exit the switch block.
+
+``` js
+const age = [10, 15, 20, 60, 30, 25];
+for (let counter =0; counter < age.length ; counter++){
+    console.log('age', age[i]);
+
+    if(age[i] === 60){
+        console.log("you're old");
+        break;
+    }
+}
+
+```
+
+`continue`: is used to escape the current iteration and will then proceed to the next iteration.
+
+``` js
+const age = [10, 15, 20, 60, 30, 25];
+for (let counter =0; counter < age.length ; counter++){
+    
+    if(age[i] === 60){
+        continue;
+    }
+    console.log('age', age[i]);
+}
+
+```
+
+**switch statement**: provides a way to select one of many code blocks to be executed based on the evaluation of an expression.
+
+``` js
+const grade = 75;
+
+switch(true){
+    case grade >== 95:
+        console.log(`congratulations for getting ${grade}`);
+        break;
+    case grade < 95 && grade >== 85:
+        console.log(`try harder to get a grade higher than ${grade}`);
+        break;
+    case grade < 85:
+        console.log(`you get a grade of ${grade}`);
+        break;
+    default:
+        console.log('invalid grade!')
+}
 ```
