@@ -508,9 +508,9 @@ if(colors.length > 0){
 ``` js
 const age = [10, 15, 20, 60, 30, 25];
 for (let counter =0; counter < age.length ; counter++){
-    console.log('age', age[i]);
+    console.log('age', age[counter]);
 
-    if(age[i] === 60){
+    if(age[counter] === 60){
         console.log("you're old");
         break;
     }
@@ -524,10 +524,10 @@ for (let counter =0; counter < age.length ; counter++){
 const age = [10, 15, 20, 60, 30, 25];
 for (let counter =0; counter < age.length ; counter++){
     
-    if(age[i] === 60){
+    if(age[counter] === 60){
         continue;
     }
-    console.log('age', age[i]);
+    console.log('age', age[counter]);
 }
 
 ```
