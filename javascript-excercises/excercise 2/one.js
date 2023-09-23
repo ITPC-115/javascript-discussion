@@ -11,10 +11,34 @@
 
 const age = window.prompt('Enter your age in years(minimum age is 0): ');
 
-console.log('Number 1:',identifyWhichStageOfHumanDevelopmentBasedOnAge());
+console.log('Number 1:',identifyWhichStageOfHumanDevelopmentBasedOnAge(age));
 
 function identifyWhichStageOfHumanDevelopmentBasedOnAge(yearsOfAge){
-    /*
-    <-- Insert your logic here -->
-    */
+
+    if(age <= 2){
+        return `Infancy`;
+    }
+
+    else if(age <= 6){
+        return `Early Childhood`;
+    }
+
+    else if(age <= 12){
+        return `Middle Childhood`;
+    }
+
+    else if(age <= 19){
+        return `Adolescence`;
+    }
+
+    else if(age <= 60){
+        return `Adulthood`;
+    }
+
+    else if(age > 60){
+        return `Old Age`;
+    }
+
+
 }
+
