@@ -17,4 +17,22 @@ function identifyWhichStageOfHumanDevelopmentBasedOnAge(yearsOfAge){
     /*
     <-- Insert your logic here -->
     */
+    if(age >= 0 && age <= 2){
+        return 'Infancy: 0-2 years old';
+    }
+    else if(age >= 3 && age <= 6){
+        return 'Early Childhood: 3-6 years old';
+    }
+    else if(age >= 7 && age <= 12 ){
+        return 'Middle Childhood: 7-12 years old';
+    }
+    else if(age >= 13 && age <= 19 ){
+        return 'Adolescence: 13-19 years old';
+    }
+    else if(age >= 20 && age <= 60){
+        return 'Adulthood: 20-60 years old';
+    }
+    else if(age >= 61){
+        return 'Old Age: 61 and above';
+    } 
 }
