@@ -6,13 +6,16 @@
     */
 
 const ipAddresses = ['127.0.0.1','127.25.0.3','127.25.25.25','127.0.4.1'];
-const ports = ['5050','4848','3456','8080']
+const ports = ['5050','4848','3456','8080'];
     
 console.log('Number 2:',generateNetworkAddresses());
     
 function generateNetworkAddresses(ipAddresses, ports){
-        /*
-        <-- Insert your logic here -->
-        */
+        
+        
+
+        
+    
+
         
 }
