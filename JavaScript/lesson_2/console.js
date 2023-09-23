@@ -1,1 +1,1 @@
-labay labay nga code
+Gwapa ko Crizwa
