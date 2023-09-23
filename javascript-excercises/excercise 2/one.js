@@ -8,13 +8,51 @@
         
         Complete the code to display on which stage you are on based on your age-->
     */
-
+/*
 const age = window.prompt('Enter your age in years(minimum age is 0): ');
 
-console.log('Number 1:',identifyWhichStageOfHumanDevelopmentBasedOnAge());
+console.log('Number 1:',identifyWhichStageOfHumanDevelopmentBasedOnAge(age));
 
-function identifyWhichStageOfHumanDevelopmentBasedOnAge(yearsOfAge){
-    /*
-    <-- Insert your logic here -->
-    */
+function identifyWhichStageOfHumanDevelopmentBasedOnAge(yearsofAge){
+
+   if(yearsofAge <= 0 && yearsofAge >= 2){
+        return 'Infancy: 0-2 years old';
+   }
+   else if(yearsofAge <= 3 && yearsofAge >= 6){
+        return 'Early Childhood: 3-6 years old';
+   }
+   else if(yearsofAge <= 7 && yearsofAge >= 12){
+        return 'Middle Childhood: 7-12 years old';
+   }
+   else if(yearsofAge <= 13 && yearsofAge >= 19){
+        return 'Adolescence: 13-19 years old';
+   }
+   else if(yearsofAge <= 20 && yearsofAge >= 60){
+        return 'Adulthood: 20-60 years old';
+   }
+   else if(yearsofAge >= 61){
+        return 'Old Age: 61 and above';
+   }
+} */
+function x(yearsofAge){
+    if(yearsofAge >= 0 && yearsofAge <= 2){
+        return 'Infancy: 0-2 years old';
+   }
+   else if(yearsofAge >= 3 && yearsofAge <= 6){
+        return 'Early Childhood: 3-6 years old';
+   }
+   else if(yearsofAge >= 7 && yearsofAge <= 12){
+        return 'Middle Childhood: 7-12 years old';
+   }
+   else if(yearsofAge >= 13 && yearsofAge <= 19){
+        return 'Adolescence: 13-19 years old';
+   }
+   else if(yearsofAge >= 20 && yearsofAge <= 60){
+        return 'Adulthood: 20-60 years old';
+   }
+   else if(yearsofAge >= 61){
+        return 'Old Age: 61 and above';
+   }
 }
+const age = window.prompt('Enter your age in years(minimum age is 0): ');
+console.log('Number 1:',x(age));
