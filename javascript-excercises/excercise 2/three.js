@@ -11,7 +11,7 @@ const choice = window.prompt(question);
 function isCorrect(){
        
     if (choice == 'A' || choice == 'B' || choice == 'C' || choice == 'D'){
-        return 'true';
+        return true;
     }
 
     else{
