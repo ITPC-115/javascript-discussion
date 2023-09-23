@@ -1,1 +1,1 @@
-labay labay nga code
+//EARL KRISTIAN LANCE L. ORTIZ
