@@ -1,1 +1,1 @@
-labay labay nga code
+mama mo
