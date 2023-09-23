@@ -12,13 +12,13 @@ console.log('Number 3: ',isCorrect(choice));
 function isCorrect(choice){
     switch(choice){
         case 'A':
-            return 'true';
+            return true;
         case 'B':
-            return 'true';
+            return true;
         case 'C':
-            return 'true';
+            return true;
         case 'D':
-            return 'true';
+            return true;
         default:
             return 'Invalid Input';
     }
