@@ -8,12 +8,18 @@ const question = 'It provides a way to select one of many code blocks to be exec
 '\n [A] Conditional Statement \n [B] Switch Statement \n [C] If Statement \n [D] Else Statement'
 const choice = window.prompt(question);
 
+function isCorrect(){
+       
+    if (choice == 'A' || choice == 'B' || choice == 'C' || choice == 'D'){
+        return choice;
+    }
+
+    else{
+        return 'invalid input';
+    }
+
+
+}
     
 console.log('Number 3',isCorrect());
-    
-function isCorrect(){
-        /*
-        <-- Insert your logic here -->
-        */
-        
-}
+ 
