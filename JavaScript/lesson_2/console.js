@@ -1,1 +1,0 @@
-Gwapa ko Crizwa

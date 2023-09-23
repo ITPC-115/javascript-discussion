@@ -3,11 +3,9 @@
     
 */
 
-const display = function(){
+const display =() =>{
     return 'hello, world';
 };
-
-let result = display();
-console.log('Number 4:', result);
+console.log('Number 4:',display());
 
     
