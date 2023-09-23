@@ -12,8 +12,18 @@ const choice = window.prompt(question);
 console.log('Number 3',isCorrect());
     
 function isCorrect(){
-        /*
-        <-- Insert your logic here -->
-        */
-        
+      
+    switch(choice)
+    {
+        case 'a':
+            return "True";
+        case 'b':
+            return "True";
+        case 'c':
+            return "True";
+        case 'd':
+           return "True";
+        default:
+            return "Invalid Input";
+    }
 }
