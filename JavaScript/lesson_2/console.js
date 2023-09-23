@@ -1,1 +1,1 @@
-labay labay nga code
+// Labay labay nga code
