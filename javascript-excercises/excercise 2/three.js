@@ -9,11 +9,24 @@ const question = 'It provides a way to select one of many code blocks to be exec
 const choice = window.prompt(question);
 
     
-console.log('Number 3',isCorrect());
+console.log('Number 3',isCorrect(choice));
     
-function isCorrect(){
-        /*
-        <-- Insert your logic here -->
-        */
-        
+function isCorrect(choice){
+    
+    if (choice === 'A' || choice === 'a'){
+        return 'False';
+    }
+    else if (choice === 'B' || choice === 'b'){
+        return 'True';
+    }
+    else if (choice === 'C' || choice === 'c'){
+        return 'False';
+    }
+    else if (choice === 'D' || choice === 'd'){
+        return 'False';
+    }
+    else{
+        return "invalid input";
+    }
+
 }
