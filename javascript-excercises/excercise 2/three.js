@@ -16,7 +16,7 @@ function isCorrect(choice){
         {
             case 'A':
             case 'a':
-                choice = true;
+                choice = false;
                 return choice;
                 break;
             case 'B':
@@ -26,12 +26,12 @@ function isCorrect(choice){
                 break;
             case 'C':
             case 'c':
-                choice = true;
+                choice = false;
                 return choice;
                 break;
             case 'D':
             case 'd':
-                choice = true;
+                choice = false;
                 return choice;
                 break;
             default:
