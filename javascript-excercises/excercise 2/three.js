@@ -12,8 +12,11 @@ const choice = window.prompt(question);
 console.log('Number 3',isCorrect());
     
 function isCorrect(){
-        /*
-        <-- Insert your logic here -->
-        */
-        
+    const correctAnswer = 'B'; // The correct answer is 'B' for Switch Statement
+
+    if (userChoice === 'A' || userChoice === 'B' || userChoice === 'C' || userChoice === 'D') {
+        return userChoice === correctAnswer;
+    } else {
+        return 'Invalid Input';
+    }
 }
