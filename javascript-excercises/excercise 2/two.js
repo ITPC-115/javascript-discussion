@@ -12,7 +12,7 @@ console.log('Number 2:',generateNetworkAddresses());
     
 function generateNetworkAddresses(ipAddresses, ports){
         var x =[];
-        for(let y = 0; y < 3; y++){
+        for(let y = 0; y < 4; y++){
             x[y] = ipAddresses[y] + ":" + ports[y];
         }
         return x;
