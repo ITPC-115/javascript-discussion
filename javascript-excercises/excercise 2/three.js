@@ -8,12 +8,20 @@ const question = 'It provides a way to select one of many code blocks to be exec
 '\n [A] Conditional Statement \n [B] Switch Statement \n [C] If Statement \n [D] Else Statement'
 const choice = window.prompt(question);
 
-    
-console.log('Number 3',isCorrect());
-    
-function isCorrect(){
-        /*
-        <-- Insert your logic here -->
-        */
-        
+function isCorrect(choice){
+    switch (choice.toUpperCase()) {
+        case 'A':
+            return false;
+        case 'B':
+            return true;
+        case 'C':
+            return false;
+        case 'D':
+            return false;
+        default:
+            return 'Invalid Input';
+                            
+    }
 }
+                    
+console.log('Number 3:',isCorrect(choice));
