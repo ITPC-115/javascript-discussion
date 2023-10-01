@@ -1,19 +1,21 @@
 /*
     <-- Complete the code. It should log true if the answer is correct and false if it's not.
     In case an input is invalid it should log 'Invalid Input'. This should not be typecase sensetive -->
-    */
+    */ 
 
 const question = 'It provides a way to select one of many code blocks to be executed'+
 ' based on the evaluation of an expression.'+
 '\n [A] Conditional Statement \n [B] Switch Statement \n [C] If Statement \n [D] Else Statement'
 const choice = window.prompt(question);
-
+const correctAnswer = 'A','B','C','D';
     
-console.log('Number 3',isCorrect());
+console.log('Number 3',isCorrect(choice));
     
-function isCorrect(){
-        /*
-        <-- Insert your logic here -->
-        */
+function isCorrect(userChoice){
+        if (!userChoice){
+            return 'Invalid Input';
+        }
+    userChoice = userChoice.toUpperCase();
+    return userChoice === correctAnswer;
         
 }
