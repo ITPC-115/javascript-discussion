@@ -3,7 +3,7 @@
     
 */
 
-const display = function(){
+const display = function()=>{
     return 'hello, world';
 };
 
