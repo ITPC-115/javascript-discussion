@@ -7,15 +7,38 @@ const question = 'It provides a way to select one of many code blocks to be exec
 ' based on the evaluation of an expression.'+
 '\n [A] Conditional Statement \n [B] Switch Statement \n [C] If Statement \n [D] Else Statement'
 const choice = window.prompt(question);
-const correctAnswer = 'A','B','C','D';
     
 console.log('Number 3',isCorrect(choice));
     
-function isCorrect(userChoice){
-        if (!userChoice){
-            return 'Invalid Input';
+function isCorrect(Choice){
+    switch (Choice){
+        case 'A';
+        case 'a';
+            choice = false;
+            return choice;
+            break;
+
+        case 'B';
+        case 'b';
+            choice = true;
+            return choice;
+            break;
+
+        case 'C';
+        case 'c';
+            choice = false;
+            return choice;
+            break;
+
+        case 'D';
+        case 'd';
+            choice = false;
+            return choice;
+            break;
+
+        default:
+            choice = 'Invalid Input.';
+            return choice;
         }
-    userChoice = userChoice.toUpperCase();
-    return userChoice === correctAnswer;
         
 }
