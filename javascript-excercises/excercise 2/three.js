@@ -12,26 +12,26 @@ console.log('Number 3',isCorrect(choice));
     
 function isCorrect(Choice){
     switch (Choice){
-        case 'A';
-        case 'a';
+        case 'A':
+        case 'a':
             choice = false;
             return choice;
             break;
 
-        case 'B';
-        case 'b';
+        case 'B':
+        case 'b':
             choice = true;
             return choice;
             break;
 
-        case 'C';
-        case 'c';
+        case 'C':
+        case 'c':
             choice = false;
             return choice;
             break;
 
-        case 'D';
-        case 'd';
+        case 'D':
+        case 'd':
             choice = false;
             return choice;
             break;
