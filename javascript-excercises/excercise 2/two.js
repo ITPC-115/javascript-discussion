@@ -10,14 +10,6 @@ const ports = ['5050','4848','3456','8080']
         
 function generateNetworkAddresses(ipAddresses, ports) {
     const networkAddresses = [];
-    for (const ipAddress of ipAddresses) {
-      for (const port of ports) {
-        const networkAddress = `${ipAddress}:${port}`;
-        networkAddresses.push(networkAddress);
-      }
-    }
-    return networkAddresses;
-  }    
-const networkAddresses = generateNetworkAddresses(ipAddresses, ports);
+
 console.log('Number 2:', networkAddresses);
     
