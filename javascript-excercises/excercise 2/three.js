@@ -20,5 +20,6 @@ function isCorrect(choice){
         default:
             return 'Invalid Input';                            
     }
-}                    
+}   
+                 
 console.log('Number 3:',isCorrect(choice));
