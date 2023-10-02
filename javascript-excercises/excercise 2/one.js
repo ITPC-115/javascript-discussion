@@ -9,21 +9,30 @@
         Complete the code to display on which stage you are on based on your age-->
     */
         function identifyWhichStageOfHumanDevelopmentBasedOnAge(yearsOfAge) {
-            if (yearsOfAge < 0) {
-              return 'Invalid age.';
-            } else if (yearsOfAge >= 0 && yearsOfAge <= 2) {
-              return 'Infancy';
-            } else if (yearsOfAge >= 3 && yearsOfAge <= 6) {
-              return 'Early Childhood';
-            } else if (yearsOfAge >= 7 && yearsOfAge <= 12) {
-              return 'Middle Childhood';
-            } else if (yearsOfAge >= 13 && yearsOfAge <= 19) {
-              return 'Adolescence';
-            } else if (yearsOfAge >= 20 && yearsOfAge <= 60) {
-              return 'Adulthood';
-            } else if (yearsOfAge >= 61) {
-              return 'Old Age';
-            }
+          if(yearsOfAge >= 0 && age <= 2){
+            yearsOfAge = 'Infancy';
+            return yearsOfAge;
+           }
+           else if(yearsOfAge >= 3 && age <= 6){
+            yearsOfAge = 'Early Childhood';
+            return yearsOfAge;
+           }
+           else if(yearsOfAge >= 7 && age <= 12){
+            yearsOfAge = 'Middle Childhood';
+            return yearsOfAge;
+           }
+           else if(yearsOfAge >= 13 && age <= 19){
+            yearsOfAge = 'Adolescence';
+            return yearsOfAge;
+           }
+           else if(yearsOfAge >= 20 && age <= 60){
+            yearsOfAge = 'Adulthood';
+            return yearsOfAge;
+           }
+           else if(yearsOfAge >= 61){
+            yearsOfAge = 'Old Age';
+            return yearsOfAge;
+           }
           }
           
           const age = window.prompt('Enter your age in years(minimum age is 0): ');
