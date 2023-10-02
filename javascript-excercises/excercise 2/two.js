@@ -11,11 +11,12 @@
     console.log('Number 2:',generateNetworkAddresses(ipAddresses, ports));
         
     function generateNetworkAddresses(ipAddresses, ports){
-            var add = [];
+            var join = [];
     
         for(let i = 0; i < 4; i++){
-            add[i] = ipAddresses[i] + ':' + ports[i];
+            join[i] = ipAddresses[i] + ':' + ports[i];
         }
     
-        return add;
+        return join;
     }
+    
