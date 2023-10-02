@@ -3,7 +3,7 @@
     
 */
 
-const display = () => 'hello, world';
+console.out ('hello, world');
 
 let result = display();
 console.log('Number 4:', result);
