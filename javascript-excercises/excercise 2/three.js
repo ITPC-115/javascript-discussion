@@ -9,30 +9,22 @@ const question = 'It provides a way to select one of many code blocks to be exec
 const choice = window.prompt(question);
 
     
-console.log('Number 3:',isCorrect(choice));
+console.log('Number 3:',isCorrect(choice.toLowerCase()));
     
 function isCorrect(choice){
     switch(choice)
         {
-            case 'A':
             case 'a':
-                choice = false;
-                return choice;
+                return false;
                 break;
-            case 'B':
             case 'b':
-                choice = true;
-                return choice;
+                return true;
                 break;
-            case 'C':
             case 'c':
-                choice = false;
-                return choice;
+                return false;
                 break;
-            case 'D':
             case 'd':
-                choice = false;
-                return choice;
+                return false;
                 break;
             default:
                 choice = 'Invalid Input';
