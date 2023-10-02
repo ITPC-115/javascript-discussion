@@ -12,8 +12,22 @@ const choice = window.prompt(question);
 console.log('Number 3',isCorrect());
     
 function isCorrect(){
-        /*
-        <-- Insert your logic here -->
-        */
-        
+        switch (choice.toUpperCase()) {
+            case 'A':
+                return 'False';
+                break;
+            case 'B':
+                return 'False';
+                break;
+            case 'C':
+                return 'True';
+                break;
+            case 'D':
+                return 'False';
+                break;
+            default:
+                return 'Invalid Input';
+                break;
+        }
 }
+console.log('Number 3',isCorrect());
