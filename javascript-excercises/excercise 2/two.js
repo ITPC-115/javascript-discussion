@@ -5,23 +5,17 @@
     Network Address: 127.0.0.1:5050 -->
     */
 
-    const ipAddresses = ['127.0.0.1','127.25.0.3','127.25.25.25','127.0.4.1'];
-    const ports = ['5050','4848','3456','8080']
-            
-    function generateNetworkAddresses(ipAddresses, ports) {
-        const networkAddresses = [];
-        for (const ipAddress of ipAddresses) {
-          for (const port of ports) {
+const ipAddresses = ['127.0.0.1','127.25.0.3','127.25.25.25','127.0.4.1'];
+const ports = ['5050','4848','3456','8080']
     
-            const networkAddress = `${ipAddress}:${port}`;
+console.log('Number 2:',generateNetworkAddresses(ipAddresses, ports));
     
-            networkAddresses.push(networkAddress);
-          }
-        }
-      
-        return networkAddresses;
-      }
-            
-      const networkAddresses = generateNetworkAddresses(ipAddresses, ports);
-    
-      console.log('Number 2:', networkAddresses);
+function generateNetworkAddresses(ipAddresses, ports){
+        var join = [];
+
+    for(let x = 0; x < 4; x++){
+        join[x] = 'Network Address: ' + ipAddresses[x] + ':' + ports[x];
+    }
+
+    return join;
+}
