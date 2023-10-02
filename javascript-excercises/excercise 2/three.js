@@ -22,12 +22,10 @@ function isCorrect(choice){
             case "C":
             case "c":
                 return false;
-
             case "D":
             case "d":
                 return false;
             default:
                 return "Invalid Input";
             }
-        
 }
