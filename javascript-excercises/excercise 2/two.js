@@ -8,11 +8,17 @@
 const ipAddresses = ['127.0.0.1','127.25.0.3','127.25.25.25','127.0.4.1'];
 const ports = ['5050','4848','3456','8080']
     
-console.log('Number 2:',generateNetworkAddresses());
+console.log('Number 2:',generateNetworkAddresses(ipAddresses, ports));
     
 function generateNetworkAddresses(ipAddresses, ports){
-        /*
-        <-- Insert your logic here -->
-        */
-        
-}
+        var networkAdd = [];
+        for (const ipAddress of ipAddresses) {
+          for (let p = 0; p < 4; p++) 
+    
+            networkAdd[p] = 'Network Address: ' + ipAddresses[p] + ': ' + ports[p];
+
+        }  
+        return networkAdd;
+      }
+      
+    
