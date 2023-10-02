@@ -24,7 +24,7 @@ function isCorrect(){
             break;
         default:
             return 'Invalid Input';
-            break;
+           
                             
     }
 }
