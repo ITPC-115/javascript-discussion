@@ -8,7 +8,6 @@
         
         Complete the code to display on which stage you are on based on your age-->
     */
-
         function identifyWhichStageOfHumanDevelopmentBasedOnAge(yearsOfAge) {
             if (yearsOfAge < 0) {
               return 'Invalid age.';
