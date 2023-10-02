@@ -5,11 +5,11 @@ console.log('Number 4:', generateNetworkAddresses(ipAddresses, ports, 4));
 
 function generateNetworkAddresses(ipAddresses, ports, limit) 
 {
-    var x =[];
-        for(let y = 0; y < 4; y++){
-            x[y] = "Network Address: " + ipAddresses[y] + ":" + ports[y];
+    var z =[];
+        for(let k = 0; k < 4; k++){
+            z[k] = "Network Address: " + ipAddresses[k] + ":" + ports[k];
         }
-        return x;
+        return z;
 }
 
 
