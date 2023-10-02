@@ -3,17 +3,26 @@
     In case an input is invalid it should log 'Invalid Input'. This should not be typecase sensetive -->
     */
 
-const question = 'It provides a way to select one of many code blocks to be executed'+
-' based on the evaluation of an expression.'+
-'\n [A] Conditional Statement \n [B] Switch Statement \n [C] If Statement \n [D] Else Statement'
-const choice = window.prompt(question);
 
-    
-console.log('Number 3',isCorrect());
-    
-function isCorrect(){
-        /*
-        <-- Insert your logic here -->
-        */
-        
-}
+    const question = 'It provides a way to select one of many code blocks to be executed' +
+    ' based on the evaluation of an expression.' +
+    '\n [A] Conditional Statement \n [B] Switch Statement \n [C] If Statement \n [D] Else Statement'
+  
+  const choice = window.prompt(question);
+  
+  console.log('Number 3', isCorrect(choice));
+  
+  function isCorrect(userChoice) {
+      
+      const lowerUserChoice = userChoice.toLowerCase();
+      
+      const correctAnswer = 'b'; 
+  
+      if (lowerUserChoice === correctAnswer) {
+          return true;
+      } else if (lowerUserChoice === 'a' || lowerUserChoice === 'c' || lowerUserChoice === 'd') {
+          return false; 
+      } else {
+          return 'Invalid Input'; 
+      }
+  }
