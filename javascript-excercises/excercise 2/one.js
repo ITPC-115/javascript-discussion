@@ -27,7 +27,7 @@ else if (yearsOfAge >= 7 && yearsOfAge <= 12){
     yearsOfAge = 'Middle Childhood';
     return yearsOfAge;
 }
-else if(yearsOfAge >= 13 && ayearsOfAge <= 19){
+else if(yearsOfAge >= 13 && yearsOfAge <= 19){
     yearsOfAge = 'Adolescence';
     return yearsOfAge;
 }
