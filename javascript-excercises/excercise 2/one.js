@@ -8,9 +8,13 @@
         
         Complete the code to display on which stage you are on based on your age-->
     */
-        function identifyWhichStageOfHumanDevelopmentBasedOnAge(yearsOfAge) {
 
-          
-          const age = window.prompt('Enter your age in years(minimum age is 0): ');
-          
-          console.log('Number 1:', identifyWhichStageOfHumanDevelopmentBasedOnAge(age));
+const age = window.prompt('Enter your age in years(minimum age is 0): ');
+
+console.log('Number 1:',identifyWhichStageOfHumanDevelopmentBasedOnAge());
+        
+function identifyWhichStageOfHumanDevelopmentBasedOnAge(yearsOfAge){
+            /*
+            <-- Insert your logic here -->
+            */
+}
