@@ -9,5 +9,3 @@ const display = function(){
 
 let result = display();
 console.log('Number 4:', result);
-
-    
