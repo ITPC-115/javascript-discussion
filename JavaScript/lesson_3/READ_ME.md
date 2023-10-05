@@ -7,7 +7,7 @@
   4. Learn how to simplify and write a cleaner code.
 
 ---
-### Function Decleration and Function Expression
+### Function Declaration and Function Expression
 
 ``` js
 function display(){
@@ -38,7 +38,7 @@ display('Kim John'); // 'Kim John' <-- argument
 ```
 `arguments`: are the values passed onto the functions when being called.
 
-#### A funtion with default parameters
+#### A function with default parameters
 ```js
 function display (name = 'Sheldon'){
     console.log(`Hello ${name}`);
@@ -60,7 +60,7 @@ console.log('Fahrenheit',fahrenheit);
 ```
 ---
 ### Arrow Function
->Offers cleaner and shoter way to write function.
+>Offers cleaner and shorter way to write function.
 ``` js
 const convertToFahrenheit = (celsius) =>{
     let convertedValue = 9 / 5 * celsius +32;
@@ -102,7 +102,7 @@ firstFunction(function(name){
 });
 
 ```
-`.forEach`: an array method that itterates through an array and expects a callbackfn as an arhument.
+`.forEach`: an array method that iterates through an array and expects a callbackfn as an argument.
 ``` js
 const friends = ['rachel', 'phoebe', 'ross', 'monica', 'chandler','joey'];
 
