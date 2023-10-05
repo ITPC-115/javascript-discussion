@@ -8,6 +8,7 @@ Objectives:
 `object` : In real life, objects have properties and things they can do, and it's the same with the objects in every programming language. ECMA-262 defines an object as an unordered collection of properties. It simply means that an object is an array of values in no particular order.
 
 ![Alt text](image.png)
+
 *Source: https://www.scientecheasy.com/wp-content/uploads/2022/03/javascript-object-example.png*
 
 ### Create a new object in javascript with object literal notation and Object Constructor
