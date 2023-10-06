@@ -4,24 +4,18 @@
     to never search the exact problem or let an AI generate the code for you.
     Network Address: 127.0.0.1:5050 -->
     */
-    const ipAddresses = ['127.0.0.1','127.25.0.3','127.25.25.25','127.0.4.1'];
-    const ports = ['5050','4848','3456','8080']
-            
+    const ipAddresses = ['127.0.0.1', '127.25.0.3', '127.25.25.25', '127.0.4.1'];
+    const ports = ['5050', '4848', '3456', '8080'];
+    
     function generateNetworkAddresses(ipAddresses, ports) {
-        const networkAddresses = [];
-        for (const ipAddress of ipAddresses) {
-          for (const port of ports) {
-    
-            const networkAddress = ${ipAddress}:${port};
-    
-            networkAddresses.push(networkAddress);
-          }
+        var x =[];
+        for(let y = 0; y < 4; y++){
+            x[y] = "Network Address: " + ipAddresses[y] + ":" + ports[y];
         }
-      
-        return networkAddresses;
-      }
-            
-      const networkAddresses = generateNetworkAddresses(ipAddresses, ports);
+        return x;
+    }
     
-      console.log('Number 2:', networkAddresses);
-
+    const networkAddresses = generateNetworkAddresses(ipAddresses, ports);
+    
+    // Filter and display only the IP addresses
+    console.log('IP Addresses:', networkAddresses);
