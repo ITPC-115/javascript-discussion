@@ -30,16 +30,3 @@
           const age = window.prompt('Enter your age in years(minimum age is 0): ');
           
           console.log('Number 1:', identifyWhichStageOfHumanDevelopmentBasedOnAge(age));
-export function generateNetworkAddresses(ipAddresses, ports) {
-    const networkAddresses = [];
-    for (const ipAddress of ipAddresses) {
-        for (const port of ports) {
-
-            const networkAddress = $, { ipAddress }: $, { port };
-
-            networkAddresses.push(networkAddress);
-        }
-    }
-
-    return networkAddresses;
-}
